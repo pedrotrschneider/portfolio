@@ -200,7 +200,7 @@ h3 { font-size: var(--fs-h3); }
 .logos-animation {
     position: absolute;
     width: 150vw;
-    height: 1600px;
+    height: 1800px;
     background: var(--clr-dark);
     display: flex;
     flex-direction: column;
