@@ -22,3 +22,9 @@ const intersectionObserver = new IntersectionObserver((entries) => {
 });
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((element) => intersectionObserver.observe(element));
+
+// Code to repeat logo lines for logo animation
+const node = document.querySelector('.repeat');
+[...Array(25)].forEach(_ => {
+    node.parentNode.insertBefore(node.cloneNode(true), node);
+});
