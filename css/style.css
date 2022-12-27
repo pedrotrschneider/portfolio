@@ -22,6 +22,7 @@ section {
 
     /* Colors */
     --clr-light: #fff;
+    --clr-light-transparent: rgba(255, 255, 255, 0.164);
     --clr-dark: #303030;
     --clr-dark-transparent: #30303070;
     --clr-accent: #16e0bd;
@@ -454,6 +455,7 @@ header {
 }
 
 .intro__img {
+    background-color: var(--clr-light-transparent);
     box-shadow: var(--bs);
     backdrop-filter: blur(6px);
     border-radius: 20px;
