@@ -676,6 +676,9 @@ header {
 }
 
 .portfolio__project-cta {
+    padding: .5em 0;
+    border-radius: 20px;
+    background: var(--clr-dark);
     color: var(--clr-accent);
 }
 
