@@ -28,3 +28,22 @@ const node = document.querySelector('.repeat');
 [...Array(25)].forEach(_ => {
     node.parentNode.insertBefore(node.cloneNode(true), node);
 });
+
+// Code to show portfolio modals
+const portfolioItems = document.querySelectorAll('.portfolio__item');
+const portfolioModals = document.querySelectorAll('.portfolio-modal');
+
+portfolioItems.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        portfolioModals[i].classList.add('opened');
+        portfolioModals[i].focus();
+    });
+});
+
+// Code for close button of portfolio modals
+const portfolioModalCloseButtons = document.querySelectorAll('.portfolio-modal__close');
+document.querySelectorAll('.portfolio-modal__close').forEach((item, i) => {
+    item.addEventListener('click', () => {
+        item.parentElement.parentElement.parentElement.classList.remove('opened');
+    });
+});

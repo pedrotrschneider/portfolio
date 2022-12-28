@@ -627,6 +627,7 @@ header {
     background-color: var(--clr-light);
     overflow: hidden;
     transition: all 750ms;
+    cursor: pointer;
 }
 
 .portfolio__item:focus,
@@ -640,6 +641,7 @@ header {
 }
 
 .portfolio__img {
+    min-width: 100%;
     transition: 
         all 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -676,6 +678,10 @@ header {
 }
 
 .portfolio__project-cta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: .5em 0;
     border-radius: 20px;
     background: var(--clr-dark);
@@ -730,6 +736,96 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Modal pages for projects */
+
+.portfolio-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    z-index: 2000;
+
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.portfolio-modal.opened {
+    transform: translateX(0);
+}
+
+.portfolio-modal__inner {
+    background: transparent;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 20px;
+    color: var(--clr-light);
+    box-shadow: var(--bs);
+}
+
+.portfolio-modal__top {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-dark-transparent);
+    backdrop-filter: blur(12px);
+}
+
+.portfolio-modal__title {
+    flex-grow: 1;
+    padding: 1em 1.5em;
+    font-size: 20px;
+}
+
+.portfolio-modal__close {
+    color: var(--clr-accent);
+    text-shadow: var(--bs);
+    padding: 1em 1.5em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.portfolio-modal__content {
+    background: var(--clr-dark);
+    padding: 0 1em;
+    padding-bottom: 1em;
+    line-height: 1.5;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.portfolio-modal__content p {
+    max-width: 80%;
+    padding: .3em 0;
+    margin: 0 auto;
+}
+
+.portfolio-modal__content img {
+    max-width: 90%;
+    padding: .3em 0;
+    margin: 0 auto;
+}
+
+.portfolio-modal__bottom {
+    background: var(--clr-dark);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    padding: 1em;
+}
+
+.portfolio-modal__button {
+    border: none;
 }
 
 /* Individual portfolio item styles */
