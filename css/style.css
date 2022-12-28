@@ -246,23 +246,23 @@ h3 { font-size: var(--fs-h3); }
 }
 
 .logos-animation .row .column {
-    animation: animate1 80s linear infinite;
-    animation-delay: -80s;
+    animation: animate1 200s linear infinite;
+    animation-delay: -200s;
 }
 
 .logos-animation .row .column:nth-child(2) {
-    animation: animate2 80s linear infinite;
-    animation-delay: -40s;
+    animation: animate2 200s linear infinite;
+    animation-delay: -100s;
 }
 
 .logos-animation .row:nth-child(even) .column {
-    animation: animate3 80s linear infinite;
-    animation-delay: -80s;
+    animation: animate3 200s linear infinite;
+    animation-delay: -200s;
 }
 
 .logos-animation .row:nth-child(even) .column:nth-child(2) {
-    animation: animate4 80s linear infinite;
-    animation-delay: -40s;
+    animation: animate4 200s linear infinite;
+    animation-delay: -100s;
 }
 
 @keyframes animate1 {
