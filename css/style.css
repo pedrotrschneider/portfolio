@@ -624,25 +624,65 @@ header {
 }
 
 .portfolio__item {
-    background-color: var(--clr-accent);
+    background-color: var(--clr-light);
     overflow: hidden;
+    transition: all 750ms;
+}
+
+.portfolio__item:focus,
+.portfolio__item:hover {
+    border-radius: 30px;
 }
 
 .portfolio__item:focus {
     position: relative;
-    z-index: 2 ;
+    z-index: 2;
 }
 
 .portfolio__img {
     transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        all 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
 
-.portfolio__img:hover,
+.portfolio__item:hover .portfolio__img,
 .portfolio__item:focus .portfolio__img {
+    filter: blur(8px);
     transform: scale(1.2);
-    opacity: .75;
+    opacity: .25;
+}
+
+.portfolio__content-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 750ms;
+}
+
+.portfolio__project-title,
+.portfolio__project-description,
+.portfolio__project-cta {
+    margin: 2em;
+    color: var(--clr-dark);
+}
+
+.portfolio__project-description {
+    text-align: left;
+}
+
+.portfolio__project-cta {
+    color: var(--clr-accent);
+}
+
+.portfolio__item:hover .portfolio__content-container,
+.portfolio__item:focus .portfolio__content-container {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* Footer */
