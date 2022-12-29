@@ -546,7 +546,7 @@ header {
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 1000px;
+        max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -579,7 +579,7 @@ header {
 }
 
 .about-me__contents {
-    max-width: 1000px;
+    max-width: 60vw;
     margin: 0 auto;
 }
 
@@ -616,9 +616,9 @@ header {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
+        left: -2em;
+        width: calc(100% + 4em);
+        padding-left: 2em;
         padding-right: calc(200px + 4em);
     }
 
