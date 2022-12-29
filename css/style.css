@@ -25,6 +25,7 @@ section {
     --clr-light-transparent: #efe0e43d;
     --clr-dark: #2a2627;
     --clr-dark-transparent: #2a2627bb;
+    --clr-darker: #141213;
     --clr-accent: #DA0037;
     --clr-accent-transparent: #DA00378e;
 
@@ -203,7 +204,7 @@ h3 { font-size: var(--fs-h3); }
     width: 150vw;
     max-width: 100%;
     height: 1900px;
-    background: var(--clr-dark);
+    background: var(--clr-darker);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -231,7 +232,7 @@ h3 { font-size: var(--fs-h3); }
 }
 
 .logos-animation .row .column i {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, 0.05);
     padding: 0 5px;
     user-select: none;
     cursor: default;
