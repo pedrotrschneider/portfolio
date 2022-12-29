@@ -495,11 +495,10 @@ header {
 /* My services section */
 
 .my-services {
-    background-color: transparent;
+    background-color: var(--clr-dark-transparent);
     background-image: url(../img/services-bg.jpg);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
     background-size: cover;
-    background-blend-mode: multiply; 
     color: var(--clr-light);
     text-align: center;
 }
@@ -558,11 +557,33 @@ header {
 /* About me section */
 
 .about-me {
+    background-color: var(--clr-dark-transparent);
+    background-image: url(../img/about-bg.jpg);
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    color: var(--clr-light);
+}
+
+/* Add a div for blur effect on background of section */
+.about-me::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr-dark-transparent);
+    backdrop-filter: blur(15px);
+}
+
+.about-me__contents {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .section__subtitle--about {
+    color: var(--clr-dark);
     display: inline-block;
 }
 
@@ -575,7 +596,7 @@ header {
 }
 
 @media (min-width: 600px) {
-    .about-me {
+    .about-me__contents {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas: 
