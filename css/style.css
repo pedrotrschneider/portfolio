@@ -800,10 +800,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3em;
     z-index: 2000;
 
-    transform: translateX(-100%);
+    transform: translateX(-120%);
     transition: all 1s;
 }
 
@@ -813,12 +812,25 @@ header {
 
 .portfolio-modal__inner {
     background: transparent;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
     max-width: 1000px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 0px;
     color: var(--clr-light);
     box-shadow: var(--bs);
+}
+
+@media (min-width: 700px) {
+    .portfolio-modal__inner {
+        height: 90vh;
+        max-height: 90vh;
+        margin: 3em;
+        border-radius: 20px;
+    }    
 }
 
 .portfolio-modal__top {
@@ -852,7 +864,6 @@ header {
     padding: 0 1em;
     padding-bottom: 1em;
     line-height: 1.5;
-    max-height: 80vh;
     overflow-y: scroll;
 }
 
