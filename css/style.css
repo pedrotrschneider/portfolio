@@ -532,7 +532,6 @@ header {
     height: 2px;
     margin: 0.5em auto 1em;
     background-color: var(--clr-accent);
-    opacity: 0.25;
 }
 
 .services {
@@ -599,7 +598,7 @@ header {
     backdrop-filter: blur(6px);
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
     .about-me__contents {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -630,7 +629,7 @@ header {
         top: 2em;
         z-index: 2;
     }
-}
+} */
 
 /* My work section */
 
