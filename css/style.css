@@ -559,8 +559,7 @@ header {
 /* About me section */
 
 .about-me {
-    background-color: var(--clr-dark-transparent);
-    background-image: url(../img/about-bg.jpg);
+    background-color: var(--clr-accent);
     background-size: cover;
     backdrop-filter: blur(15px);
     color: var(--clr-light);
@@ -585,7 +584,8 @@ header {
 }
 
 .section__subtitle--about {
-    color: var(--clr-dark);
+    color: var(--clr-light);
+    background: var(--clr-dark);
     display: inline-block;
 }
 
