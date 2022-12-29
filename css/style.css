@@ -760,6 +760,10 @@ header {
     padding: .5em;
 }
 
+.footer__copyright {
+    margin-bottom: 0;
+}
+
 /* Modal pages for projects */
 
 .portfolio-modal {
