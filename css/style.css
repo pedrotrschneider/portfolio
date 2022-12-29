@@ -850,7 +850,7 @@ header {
     padding: 0 1em;
     padding-bottom: 1em;
     line-height: 1.5;
-    max-height: 60vh;
+    max-height: 80vh;
     overflow-y: scroll;
 }
 
