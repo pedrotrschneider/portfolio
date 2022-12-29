@@ -21,12 +21,12 @@ section {
     --fw--bold: 900;
 
     /* Colors */
-    --clr-light: #fff;
-    --clr-light-transparent: rgba(255, 255, 255, 0.164);
-    --clr-dark: #303030;
-    --clr-dark-transparent: #30303070;
-    --clr-accent: #16e0bd;
-    --clr-accent-transparent: #16e0be8e;
+    --clr-light: #efe0e4;
+    --clr-light-transparent: #efe0e43d;
+    --clr-dark: #2a2627;
+    --clr-dark-transparent: #2a262770;
+    --clr-accent: #DA0037;
+    --clr-accent-transparent: #DA00378e;
 
     /* Font sizes */
     --fs-h1: 3rem;
