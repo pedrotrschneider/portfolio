@@ -24,7 +24,7 @@ section {
     --clr-light: #efe0e4;
     --clr-light-transparent: #efe0e43d;
     --clr-dark: #2a2627;
-    --clr-dark-transparent: #2a262770;
+    --clr-dark-transparent: #2a2627bb;
     --clr-accent: #DA0037;
     --clr-accent-transparent: #DA00378e;
 
@@ -143,7 +143,6 @@ strong { font-weight: var(--fw--bold); }
     letter-spacing: 2px;
     font-weight: var(--fw--bold);
     transition: all 300ms ease-in-out;
-    backdrop-filter: blur(6px);
 }
 
 .btn:hover {
@@ -322,11 +321,13 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
+    background: var(--clr-dark-transparent);
+    backdrop-filter: blur(12px);
+    border-radius: 0px;
     color: var(--clr-light);
     box-shadow: 0em 0em 0.75em rgba(0, 0, 0, 0),
                 0em 0em 0.25em rgba(0, 0, 0, 0);
-    top: 0;
+                top: 0;
     bottom: 0;
     right: 0;
     left: 0;
@@ -340,6 +341,7 @@ header {
     .nav {
         left: max(50%, calc(100% - 800px));
         max-width: 800px;
+        border-radius: 20px 0px 0px 20px;
     }
 }
 
@@ -453,7 +455,7 @@ header {
 .intro__img {
     background-color: var(--clr-light-transparent);
     box-shadow: var(--bs);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     bottom: 1em;
 }
@@ -704,7 +706,7 @@ header {
 
 .portfolio__item:hover .portfolio__img,
 .portfolio__item:focus .portfolio__img {
-    filter: blur(8px);
+    filter: blur(10px);
     transform: scale(1.2);
     opacity: .25;
 }
