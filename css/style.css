@@ -31,8 +31,8 @@ section {
     /* Font sizes */
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.25rem;
 
     /* Box shadow */
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .5),
@@ -45,8 +45,8 @@ section {
         /* Font sizes */
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
-        --f2-h3: 1.5rem;
-        --fs-body: 1.125rem;
+        --f2-h3: 1.75rem;
+        --fs-body: 1.25rem;
     }
 }
 
@@ -202,7 +202,7 @@ h3 { font-size: var(--fs-h3); }
     position: absolute;
     width: 150vw;
     max-width: 100%;
-    height: 1800px;
+    height: 1900px;
     background: var(--clr-dark);
     display: flex;
     flex-direction: column;
@@ -214,7 +214,7 @@ h3 { font-size: var(--fs-h3); }
 
 @media (min-width: 900px) {
     .logos-animation {
-        height: 1300px;
+        height: 1350px;
     }
 }
 
