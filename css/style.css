@@ -71,9 +71,7 @@ body {
 }
 
 .stop-scrolling {
-    /* height: 100vh; */
     overflow: hidden;
-    /* position: fixed !important; */
 }
 
 section {
