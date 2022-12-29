@@ -70,6 +70,12 @@ body {
     overflow: hidden;
 }
 
+.stop-scrolling {
+    /* height: 100vh; */
+    overflow: hidden;
+    /* position: fixed !important; */
+}
+
 section {
     padding: 5em 2em;
 }

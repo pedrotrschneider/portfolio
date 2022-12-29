@@ -37,6 +37,8 @@ portfolioItems.forEach((item, i) => {
     item.addEventListener('click', () => {
         portfolioModals[i].classList.add('opened');
         portfolioModals[i].focus();
+        document.body.classList.add('stop-scrolling');
+        document.documentElement.classList.add('stop-scrolling');
     });
 });
 
@@ -45,5 +47,7 @@ const portfolioModalCloseButtons = document.querySelectorAll('.portfolio-modal__
 document.querySelectorAll('.portfolio-modal__close').forEach((item, i) => {
     item.addEventListener('click', () => {
         item.parentElement.parentElement.parentElement.classList.remove('opened');
+        document.body.classList.remove('stop-scrolling');
+        document.documentElement.classList.remove('stop-scrolling');
     });
 });
