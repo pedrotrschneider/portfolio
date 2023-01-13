@@ -701,7 +701,7 @@ header {
 .portfolio__project-title,
 .portfolio__project-description,
 .portfolio__project-cta {
-    margin: 2em;
+    margin: 1em;
     color: var(--clr-dark);
 }
 
