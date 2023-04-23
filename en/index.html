@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../img/ps-logo1-white.png">
+        <title>Pedro Schneider's Portfolio</title>
+    </head>
+
+    <body style="height: 100vh; margin: 0; overflow: hidden; background-color: #141213;">
+        <object id="template" data="../template.html" type="text/html" style="display: inline-block; width: 100vw; height: 100vh;" onload="templateLoaded()">
+            Loading template...
+        </object>
+
+        <script defer src="../js/language.js"></script>
+        <script>
+            function templateLoaded() {
+                setLanguage("en");
+            }
+        </script>
+    </body>
+</html>
