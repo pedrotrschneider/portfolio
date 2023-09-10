@@ -49,7 +49,7 @@ var languages = {
 
         myWork: {
             sectionTitle: "My work",
-            sectionSubtitle: "A selection of my best projects",
+            sectionSubtitle: "A selection of my best personal projects",
 
             alfabetiza: {
                 title: "Alfabetiza",
@@ -181,7 +181,7 @@ var languages = {
             },
 
             creativeCoding: {
-                title: "Programação Criativa",
+                title: "Creative Coding",
 
                 section1: {
                     p1: "One of my favorite aspects of coding is creative coding, working together with computer graphics. Based on that, Daniel Shiffman, from <a href=\"https://www.youtube.com/@TheCodingTrain\">The Coding Train</a> YouTube channel, makes <a href=\"https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH\">Coding Challenges</a> that mix creative coding and computer graphics.",

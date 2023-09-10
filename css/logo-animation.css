@@ -1,0 +1,102 @@
+/* Logo animation */
+.logos-animation {
+    position: absolute;
+    width: 150vw;
+    max-width: 100%;
+    height: 1900px;
+    background: var(--clr-darker);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: none;
+
+    transform: translateY(-800px);
+}
+
+@media (min-width: 900px) {
+    .logos-animation {
+        height: 1350px;
+    }
+}
+
+.logos-animation .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 0 .5em;
+    white-space: nowrap;
+    font-size: 64px;
+    user-select: none;
+
+    transform: rotate(-30deg);
+}
+
+.logos-animation .row .column i {
+    color: rgba(255, 255, 255, 0.05);
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+    transition: 1s;
+}
+
+.logos-animation .row .column i:hover {
+    transition: 0s;
+    color: var(--clr-accent);
+    text-shadow: 0 0 120px var(--clr-accent);
+}
+
+.logos-animation .row .column {
+    animation: animate1 200s linear infinite;
+    animation-delay: -200s;
+}
+
+.logos-animation .row .column:nth-child(2) {
+    animation: animate2 200s linear infinite;
+    animation-delay: -100s;
+}
+
+.logos-animation .row:nth-child(even) .column {
+    animation: animate3 200s linear infinite;
+    animation-delay: -200s;
+}
+
+.logos-animation .row:nth-child(even) .column:nth-child(2) {
+    animation: animate4 200s linear infinite;
+    animation-delay: -100s;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-250%);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}

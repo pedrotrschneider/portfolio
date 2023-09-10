@@ -1,0 +1,60 @@
+/* My services section */
+.my-services {
+    background-color: var(--clr-dark-transparent);
+    background-image: url(/img/services-bg.jpg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+/* Add a div for blur effect on background of section */
+.my-services::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr-dark-transparent);
+    backdrop-filter: blur(10px);
+}
+
+.section__title--services {
+    color: var(--clr-light);
+    text-shadow: var(--bs);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 2px;
+    margin: 0.5em auto 1em;
+    background-color: var(--clr-accent);
+}
+
+.services {
+    margin-bottom: 4em;
+}
+
+.service {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
+}

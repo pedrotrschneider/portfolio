@@ -1,0 +1,121 @@
+/* Modal pages for projects */
+.portfolio-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+
+    transform: translateX(-120%);
+    transition: all 1s;
+}
+
+.portfolio-modal.opened {
+    transform: translateX(0);
+}
+
+.portfolio-modal__inner {
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0px;
+    color: var(--clr-light);
+    box-shadow: var(--bs);
+}
+
+@media (min-width: 700px) {
+    .portfolio-modal__inner {
+        height: 90vh;
+        max-height: 90vh;
+        margin: 3em;
+        border-radius: 20px;
+    }    
+}
+
+.portfolio-modal__top {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-dark-transparent);
+    backdrop-filter: blur(12px);
+}
+
+.portfolio-modal__title {
+    flex-grow: 1;
+    padding: 1em 1.5em;
+    font-size: 20px;
+}
+
+.portfolio-modal__close {
+    color: var(--clr-accent);
+    text-shadow: var(--bs);
+    padding: 1em 1.5em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.portfolio-modal__content {
+    background: var(--clr-dark);
+    padding: 0 1em;
+    padding-bottom: 1em;
+    line-height: 1.5;
+    overflow-y: scroll;
+}
+
+.portfolio-modal__content p,
+.portfolio-modal__content h3 {
+    max-width: 80%;
+    padding: .3em 0;
+    margin: 0 auto;
+}
+
+.portfolio-modal__content p a {
+    text-decoration: none;
+    font-weight: var(--fw--bold);
+    color: var(--clr-accent);
+}
+
+.portfolio-modal__content img {
+    width: 90%;
+    max-width: 90%;
+    padding: .3em 0;
+    margin: 0 auto;
+}
+
+.portfolio-modal__bottom {
+    background: var(--clr-dark);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    padding: 1em;
+}
+
+.portfolio-modal__button {
+    border: none;
+}
+
+.portfolio-modal__links-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 0;
+    padding: 0;
+}
+
+.portfolio-modal__link {
+    color: var(--clr-accent);
+    font-size: 64px;
+    padding: 0 .2em;
+}

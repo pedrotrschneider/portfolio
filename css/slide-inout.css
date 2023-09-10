@@ -1,0 +1,41 @@
+/* Slide in and out animations */
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.service:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.service:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.service:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.social-list__item:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.social-list__item:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.social-list__item:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
