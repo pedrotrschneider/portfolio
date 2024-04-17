@@ -1,580 +1,697 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="../img/ps-logo1-white.png">
-        <title>Pedro Schneider's Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/ps-logo1-white.png">
+    <title>Pedro Schneider's Portfolio</title>
 
-        <!-- Normalization script to make it the same on all websites -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- Normalization script to make it the same on all websites -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 
-        <!-- Font awesome for icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-        <!-- Custom fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:400,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:400,900&amp;display=swap" rel="stylesheet">
 
-        <!-- Styles -->
-            <!-- General -->
-            <link rel="stylesheet" href="../css/style.css">
-            <link rel="stylesheet" href="../css/typography.css">
-            <link rel="stylesheet" href="../css/buttons.css">
-            <!-- Effects -->
-            <link rel="stylesheet" href="../css/logo-animation.css">
-            <link rel="stylesheet" href="../css/slide-inout.css">
-            <!-- Body -->
-            <link rel="stylesheet" href="../css/header.css">
-                <!-- Sections -->
-                <link rel="stylesheet" href="../css/sections/intro.css">
-                <link rel="stylesheet" href="../css/sections/my-services.css">
-                <link rel="stylesheet" href="../css/sections/about-me.css">
-                <link rel="stylesheet" href="../css/sections/my-work.css">
-            <link rel="stylesheet" href="../css/modal.css">
-            <link rel="stylesheet" href="../css/footer.css">
-    </head>
-
-    <body class="vsc-initialized" data-new-gr-c-s-check-loaded="8.907.0" data-gr-ext-installed="">
-        <!-- HTML includes -->
-            <!-- Icon animations -->
-            <div class="logos-animation">
-    <div class="row repeat">
-        <div class="column">
-            <i class="fa-solid fa-fire-flame-curved"></i>
-            <i class="fa-solid fa-gamepad"></i>
-            <i class="fa-solid fa-diamond"></i>
-            <i class="fa-solid fa-puzzle-piece"></i>
-            <i class="fa-solid fa-dice"></i>
-            <i class="fa-solid fa-headset"></i>
-            <i class="fa-solid fa-trophy"></i>
-            <i class="fa-solid fa-dice-d20"></i>
-            <i class="fa-solid fa-hat-wizard"></i>
-            <i class="fa-solid fa-chess-queen"></i>
-            <i class="fa-solid fa-scroll"></i>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-ghost"></i>
-            <i class="fa-solid fa-chess-knight"></i>
-            <i class="fa-solid fa-shield-halved"></i>
-            <i class="fa-solid fa-dungeon"></i>
-            <i class="fa-solid fa-chess-rook"></i>
-            <i class="fa-solid fa-wand-sparkles"></i>
-            <i class="fa-solid fa-chess-king"></i>
-            <i class="fa-solid fa-ring"></i>
-            <i class="fa-solid fa-vr-cardboard"></i>
-            <i class="fa-solid fa-fire-flame-curved"></i>
-            <i class="fa-solid fa-gamepad"></i>
-            <i class="fa-solid fa-diamond"></i>
-            <i class="fa-solid fa-puzzle-piece"></i>
-            <i class="fa-solid fa-dice"></i>
-            <i class="fa-solid fa-headset"></i>
-            <i class="fa-solid fa-trophy"></i>
-            <i class="fa-solid fa-dice-d20"></i>
-            <i class="fa-solid fa-hat-wizard"></i>
-            <i class="fa-solid fa-chess-queen"></i>
-            <i class="fa-solid fa-scroll"></i>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-ghost"></i>
-            <i class="fa-solid fa-chess-knight"></i>
-            <i class="fa-solid fa-shield-halved"></i>
-            <i class="fa-solid fa-dungeon"></i>
-            <i class="fa-solid fa-chess-rook"></i>
-            <i class="fa-solid fa-wand-sparkles"></i>
-            <i class="fa-solid fa-chess-king"></i>
-            <i class="fa-solid fa-ring"></i>
-            <i class="fa-solid fa-vr-cardboard"></i>
-        </div>
-        <div class="column">
-            <i class="fa-solid fa-fire-flame-curved"></i>
-            <i class="fa-solid fa-gamepad"></i>
-            <i class="fa-solid fa-diamond"></i>
-            <i class="fa-solid fa-puzzle-piece"></i>
-            <i class="fa-solid fa-dice"></i>
-            <i class="fa-solid fa-headset"></i>
-            <i class="fa-solid fa-trophy"></i>
-            <i class="fa-solid fa-dice-d20"></i>
-            <i class="fa-solid fa-hat-wizard"></i>
-            <i class="fa-solid fa-chess-queen"></i>
-            <i class="fa-solid fa-scroll"></i>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-ghost"></i>
-            <i class="fa-solid fa-chess-knight"></i>
-            <i class="fa-solid fa-shield-halved"></i>
-            <i class="fa-solid fa-dungeon"></i>
-            <i class="fa-solid fa-chess-rook"></i>
-            <i class="fa-solid fa-wand-sparkles"></i>
-            <i class="fa-solid fa-chess-king"></i>
-            <i class="fa-solid fa-ring"></i>
-            <i class="fa-solid fa-vr-cardboard"></i>
-            <i class="fa-solid fa-fire-flame-curved"></i>
-            <i class="fa-solid fa-gamepad"></i>
-            <i class="fa-solid fa-diamond"></i>
-            <i class="fa-solid fa-puzzle-piece"></i>
-            <i class="fa-solid fa-dice"></i>
-            <i class="fa-solid fa-headset"></i>
-            <i class="fa-solid fa-trophy"></i>
-            <i class="fa-solid fa-dice-d20"></i>
-            <i class="fa-solid fa-hat-wizard"></i>
-            <i class="fa-solid fa-chess-queen"></i>
-            <i class="fa-solid fa-scroll"></i>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-ghost"></i>
-            <i class="fa-solid fa-chess-knight"></i>
-            <i class="fa-solid fa-shield-halved"></i>
-            <i class="fa-solid fa-dungeon"></i>
-            <i class="fa-solid fa-chess-rook"></i>
-            <i class="fa-solid fa-wand-sparkles"></i>
-            <i class="fa-solid fa-chess-king"></i>
-            <i class="fa-solid fa-ring"></i>
-            <i class="fa-solid fa-vr-cardboard"></i>
-        </div>
-    </div>
-    </div>
-            <!-- Header -->
-            <header class="lang lang__en">
-    <div class="logo">
-        <img src="../img/ps-logo1-long-white.png" alt="">
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#services" class="nav__link">What I do</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">Who am I</a></li>
-            <li class="nav__item"><a href="#work" class="nav__link">My projects</a></li>
-        </ul>
-    </nav>
-    </header>
-
-
+    <!-- Styles -->
+        <!-- General -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/buttons.css">
+        <!-- Effects -->
+        <link rel="stylesheet" href="../css/logo-animation.css">
+        <link rel="stylesheet" href="../css/slide-inout.css">
+        <!-- Body -->
+        <link rel="stylesheet" href="../css/header.css">
             <!-- Sections -->
-            <!-- Home -->
-    <section class="intro lang lang__en" id="home">
-    <h1 class="section__title section__title--intro hidden">
-        Hi! My name is <strong>Pedro Schneider</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro hidden">Game developer</p>
+            <link rel="stylesheet" href="../css/sections/intro.css">
+            <link rel="stylesheet" href="../css/sections/my-services.css">
+            <link rel="stylesheet" href="../css/sections/about-me.css">
+            <link rel="stylesheet" href="../css/sections/my-work.css">
+        <link rel="stylesheet" href="../css/modal.css">
+        <link rel="stylesheet" href="../css/footer.css">
+</head>
 
-    <img src="../img/ps-logo1-white.png" alt="My logo" class="intro__img hidden">
-    </section>
-
-
-    <!-- My services -->
-    <section class="my-services lang lang__en" id="services">
-    <h2 class="section__title section__title--services hidden">What I do</h2>
-    <div class="services">
-        <div class="service hidden">
-            <h3>Game Design and Development</h3>
-            <p>I develop games for fun since 2018. I started out learning by myself in high school, but, after falling in love with game development, I decided to get a Bachelor's degree in Computer Science at the University of São Paulo to sharpen my knowledge, especially in graphics programming</p>
-        </div>
-        
-        <div class="service hidden">
-            <h3>Game narrative design</h3>
-            <p>In the scope of game development, one of the areas that always fascinated me is narrative design. The huge expressiveness and interactivity present in games has a huge potential for great storytelling</p>
-        </div>
-        
-        <div class="service hidden">
-            <h3>Software development</h3>
-            <p>In addition to game development, I am also a software developer in general, encompassing command line tools for Linux system, with Bash and Rust, as well as desktop and Web app development, such as this website</p>
-        </div>
+<body class="vsc-initialized" data-new-gr-c-s-check-loaded="8.912.0" data-gr-ext-installed="">
+    <!-- HTML includes -->
+        <!-- Icon animations -->
+        <div class="logos-animation">
+<div class="row repeat">
+    <div class="column">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-gamepad"></i>
+        <i class="fa-solid fa-diamond"></i>
+        <i class="fa-solid fa-puzzle-piece"></i>
+        <i class="fa-solid fa-dice"></i>
+        <i class="fa-solid fa-headset"></i>
+        <i class="fa-solid fa-trophy"></i>
+        <i class="fa-solid fa-dice-d20"></i>
+        <i class="fa-solid fa-hat-wizard"></i>
+        <i class="fa-solid fa-chess-queen"></i>
+        <i class="fa-solid fa-scroll"></i>
+        <i class="fa-solid fa-dragon"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-ghost"></i>
+        <i class="fa-solid fa-chess-knight"></i>
+        <i class="fa-solid fa-shield-halved"></i>
+        <i class="fa-solid fa-dungeon"></i>
+        <i class="fa-solid fa-chess-rook"></i>
+        <i class="fa-solid fa-wand-sparkles"></i>
+        <i class="fa-solid fa-chess-king"></i>
+        <i class="fa-solid fa-ring"></i>
+        <i class="fa-solid fa-vr-cardboard"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-gamepad"></i>
+        <i class="fa-solid fa-diamond"></i>
+        <i class="fa-solid fa-puzzle-piece"></i>
+        <i class="fa-solid fa-dice"></i>
+        <i class="fa-solid fa-headset"></i>
+        <i class="fa-solid fa-trophy"></i>
+        <i class="fa-solid fa-dice-d20"></i>
+        <i class="fa-solid fa-hat-wizard"></i>
+        <i class="fa-solid fa-chess-queen"></i>
+        <i class="fa-solid fa-scroll"></i>
+        <i class="fa-solid fa-dragon"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-ghost"></i>
+        <i class="fa-solid fa-chess-knight"></i>
+        <i class="fa-solid fa-shield-halved"></i>
+        <i class="fa-solid fa-dungeon"></i>
+        <i class="fa-solid fa-chess-rook"></i>
+        <i class="fa-solid fa-wand-sparkles"></i>
+        <i class="fa-solid fa-chess-king"></i>
+        <i class="fa-solid fa-ring"></i>
+        <i class="fa-solid fa-vr-cardboard"></i>
     </div>
+    <div class="column">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-gamepad"></i>
+        <i class="fa-solid fa-diamond"></i>
+        <i class="fa-solid fa-puzzle-piece"></i>
+        <i class="fa-solid fa-dice"></i>
+        <i class="fa-solid fa-headset"></i>
+        <i class="fa-solid fa-trophy"></i>
+        <i class="fa-solid fa-dice-d20"></i>
+        <i class="fa-solid fa-hat-wizard"></i>
+        <i class="fa-solid fa-chess-queen"></i>
+        <i class="fa-solid fa-scroll"></i>
+        <i class="fa-solid fa-dragon"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-ghost"></i>
+        <i class="fa-solid fa-chess-knight"></i>
+        <i class="fa-solid fa-shield-halved"></i>
+        <i class="fa-solid fa-dungeon"></i>
+        <i class="fa-solid fa-chess-rook"></i>
+        <i class="fa-solid fa-wand-sparkles"></i>
+        <i class="fa-solid fa-chess-king"></i>
+        <i class="fa-solid fa-ring"></i>
+        <i class="fa-solid fa-vr-cardboard"></i>
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-gamepad"></i>
+        <i class="fa-solid fa-diamond"></i>
+        <i class="fa-solid fa-puzzle-piece"></i>
+        <i class="fa-solid fa-dice"></i>
+        <i class="fa-solid fa-headset"></i>
+        <i class="fa-solid fa-trophy"></i>
+        <i class="fa-solid fa-dice-d20"></i>
+        <i class="fa-solid fa-hat-wizard"></i>
+        <i class="fa-solid fa-chess-queen"></i>
+        <i class="fa-solid fa-scroll"></i>
+        <i class="fa-solid fa-dragon"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-ghost"></i>
+        <i class="fa-solid fa-chess-knight"></i>
+        <i class="fa-solid fa-shield-halved"></i>
+        <i class="fa-solid fa-dungeon"></i>
+        <i class="fa-solid fa-chess-rook"></i>
+        <i class="fa-solid fa-wand-sparkles"></i>
+        <i class="fa-solid fa-chess-king"></i>
+        <i class="fa-solid fa-ring"></i>
+        <i class="fa-solid fa-vr-cardboard"></i>
+    </div>
+</div>
+</div>
+        <!-- Header -->
+        <header class="lang lang__en">
+<div class="logo">
+    <img src="../img/ps-logo1-long-white.png" alt="">
+</div>
+<button class="nav-toggle" aria-label="toggle navigation">
+    <span class="hamburger"></span>
+</button>
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">What I do</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">Who am I</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">My projects</a></li>
+    </ul>
+</nav>
+</header>
 
-    <a href="#work" class="btn hidden">my projects</a>
-    </section>
+
+        <!-- Sections -->
+        <!-- Home -->
+<section class="intro lang lang__en" id="home">
+<h1 class="section__title section__title--intro hidden">
+    Hi! My name is <strong>Pedro Schneider</strong>
+</h1>
+<p class="section__subtitle section__subtitle--intro hidden">Technical Artist</p>
+
+<img src="../img/ps-logo1-white.png" alt="My logo" class="intro__img hidden">
+</section>
 
 
-    <!-- About me -->
-    <section class="about-me lang lang__en" id="about">
-    <div class="about-me__contents">
+<!-- My services -->
+<section class="my-services lang lang__en" id="services">
+<h2 class="section__title section__title--services hidden">What I do</h2>
+<div class="services">
+    <div class="service hidden">
+        <h3>Game Design and Development</h3>
+        <p>I develop games for fun since 2018. I started out learning by myself in high school, but, after falling in love with game development, I decided to get a Bachelor's degree in Computer Science at the University of São Paulo to sharpen my knowledge, especially in Graphics Programming.</p>
+    </div>
+    
+    <div class="service hidden">
+        <h3>Graphics Programming</h3>
+        <p>In the scope of game development, one of the areas that always fascinated me is Graphics Programming. Because of that, I started learning by making my own games and engines from scratch using OpenGL, and then moving on to more established frameworks with the knowledge I had gained.</p>
+    </div>
+    
+    <div class="service hidden">
+        <h3>Technical Art</h3>
+        <p>While looking for a way to follow my passion for Graphics Programming professionally, I discovered the field of Technical Art, and that's what I've been doing since. I find great joy in working with amazing artists and developers, acting as the bridge between these two, at a first glance, diametrically opposed worlds.</p>
+    </div>
+</div>
+
+<a href="#work" class="btn hidden">my projects</a>
+</section>
+
+
+<!-- About me -->
+<section class="about-me" id="about">
+<div class="about-me__contents">
+    <div class="lang lang__en">
         <h2 class="section__title section__title--about hidden">Who am I</h2>
-        <p class="section__subtitle section__subtitle--about hidden">Game designer and developer since 2018</p>
+        <p class="section__subtitle section__subtitle--about hidden">Graphics Programmer and Game Developer since 2018</p>
 
         <div class="about-me__body hidden">
-            <p>I started developing games in 2018, focusing on the technical aspects of the development. My first game was written in <strong>Java</strong>, in a Game Engine made by me, using <strong>OpenGL</strong>. However, I quickly realized that my favorite aspects of game development are the <strong>visual and creative</strong> processes. With that in mind, I began looking for ways to optimize the development process.</p>
-            <p>To that end, I started using established Game Engines, specifically <strong>Unity</strong> and <strong>Godot</strong>, and I continue using them to this day, for their simplicity, practicality, and ease of development. When I'm not using a Game Engine, <strong>Rust</strong> and <strong>C/C++</strong> are my languages of choice for general-purpose programming.</p>
-            <p>I also develop other kinds of software, such as <strong>command line tools</strong> for Linux and <strong>desktop aplications</strong>, in addition to <strong>web development</strong>, such as this website.</p>
-            <p>I'm currently a student of <strong>Bachelor's in Computer Science at the University of São Paulo</strong>, one of the best universities in Latin America, in my fifth semester.</p>
+            <p>I started developing games in 2018, focusing on the technical aspects of development. My first game was written in <strong>Java</strong>, in a Game Engine made by me, using <strong>OpenGL</strong>. However, I quickly realized that my favorite aspects of game development are the <strong>visual and creative</strong> processes. With that in mind, I began looking for ways to optimize the development process.</p>
+            <p>To that end, and with the knowledge I had gained from using <strong>Graphics APIs</strong>, I started using established Game Engines, specifically <strong>Unity</strong> and <strong>Godot</strong>, and I continue using them to this day, for their simplicity, practicality, and ease of development. I find great joy in writing <strong>shaders</strong> to create complex <strong>Visual Effects</strong> and simulations with these tools. When I'm not using a Game Engine, <strong>Rust</strong> and <strong>C/C++</strong> are my languages of choice for general-purpose programming.</p>
+            <p>I currently work as a <strong>Technical Artist</strong> for a <strong>Medical Technology</strong> company, developing <strong>complex Visual Effects and Compute Shader simulations</strong> for <strong>Virtual Reality</strong> using the <strong>Unity Game Engine</strong>. I'm also finishing my <strong>Bachelor's Degree in Computer Science at the University of São Paulo</strong>, one of the best universities in Latin America, with a strong focus on <strong>Graphics Programming</strong>.</p>
         </div>
         <p class="section__subtitle section__subtitle--about hidden">Technologies I use</p>
+    </div>
+
+    
+    
+    <ul class="technologies-list">
+        <li class="technologies-list__item hidden">
+            <img src="../img/unity-icon.svg" alt="" class="technologies-list__icon">
+        </li>
+        <li class="technologies-list__item hidden">
+            <img src="../img/csh-icon.svg" alt="" class="technologies-list__icon">
+        </li>
+        <li class="technologies-list__item hidden">
+            <img src="../img/godot-icon.svg" alt="" class="technologies-list__icon">
+        </li>
+        <li class="technologies-list__item hidden">
+            <img src="../img/opengl-icon.svg" alt="" class="technologies-list__icon">
+        </li>
+        <li class="technologies-list__item hidden">
+            <img src="../img/hlsl-icon.jpg" alt="" class="technologies-list__icon">
+        </li>
+        <li class="technologies-list__item hidden">
+            <img src="../img/rust-icon.svg" alt="" class="technologies-list__icon">
+        </li>
+        <li class="technologies-list__item hidden">
+            <img src="../img/cpp-icon.svg" alt="" class="technologies-list__icon">
+        </li>
+    </ul>
+</div>
+</section>
+<!-- My work -->
+<section class="my-work" id="work">
+<h2 class="section__title section__title--work hidden lang lang__en">My work</h2>
+<p class="section__subtitle section__subtitle--work hidden lang lang__en">A selection of my best projects</p>
+
+
+
+
+<div class="portfolio">
+    <!-- Portfolio item: Ultrasound -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/ultrasound/banner.png" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Ultrasound Simulation</h3>
+    <p class="portfolio__project-description">A realistic real-time Ray-Traced Ultrasound Simulation.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: Fluid Simulation -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/fluid-sim/banner.png" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Particle Fluid Simulation</h3>
+    <p class="portfolio__project-description">A real-time particle fluid simulation written with Compute Shaders.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: Custom Decal -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/decal/banner.png" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Custom Decal</h3>
+    <p class="portfolio__project-description">A custom fake Decal effect that can be used in any mesh, with no need for actual Decals.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: X-ray Effect -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/xray/banner.png" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">X-ray Effect</h3>
+    <p class="portfolio__project-description">A custom X-ray effect made for Virtual Reality medical simulations.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: Custom Outline -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/outline/banner.png" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Custom Outline</h3>
+    <p class="portfolio__project-description">A custom outline for Unity's HDRP that supports planar meshes and mesh-masking.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: Shader Fractals -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/shader-fractals/banner.png" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Shader Fractals</h3>
+    <p class="portfolio__project-description">A collection of GLSL shaders to render 2D and 3D fractals using Ray Marching.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: Pulsar -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/pulsar/banner.gif" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Pulsar</h3>
+    <p class="portfolio__project-description">A futuristic base-building, strategy survival game.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: Creative Coding -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/challenges/banner.png" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Creative coding</h3>
+    <p class="portfolio__project-description">A collection of creative coding and computer graphics projects.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
+    <!-- Portfolio item: Alfabetiza -->
+    <!-- <include src="../components/sections/portfolio-items/alfabetiza.html"></include> -->
+    <!-- Portfolio item: Totally Accurate Attack on Titan Simulator -->
+    <!-- <include src="../components/sections/portfolio-items/taaots.html"></include> -->
+</div>
+    
+</section>
+        <!-- Modals for portfolio items -->
+        <!-- Modal Ultrasound -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Ultrasound</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <h3>A realistic real-time Ray-Traced Ultrasound Simulation.</h3>
         
-        <ul class="technologies-list">
-            <li class="technologies-list__item hidden">
-                <img src="../img/godot-icon.svg" alt="" class="technologies-list__icon">
-            </li>
-            <li class="technologies-list__item hidden">
-                <img src="../img/unity-icon.svg" alt="" class="technologies-list__icon">
-            </li>
-            <li class="technologies-list__item hidden">
-                <img src="../img/rust-icon.svg" alt="" class="technologies-list__icon">
-            </li>
-            <li class="technologies-list__item hidden">
-                <img src="../img/bash-icon.svg" alt="" class="technologies-list__icon">
-            </li>
-            <li class="technologies-list__item hidden">
-                <img src="../img/html-icon.svg" alt="" class="technologies-list__icon">
-            </li>
-            <li class="technologies-list__item hidden">
-                <img src="../img/css-icon.svg" alt="" class="technologies-list__icon">
-            </li>
-            <li class="technologies-list__item hidden">
-                <img src="../img/js-icon.svg" alt="" class="technologies-list__icon">
+        <iframe src="https://drive.google.com/file/d/1VQZUjaKGm5cikv19pHkgLtZgJv3NuAje/preview" allow="autoplay"></iframe>
+
+        <p>This simulator was developed alongside a team of Developers and Technical Artists using the Unity Game Engine. It was requested by a client who wanted to integrate Virtual Reality into the training of doctors to use their equipment.</p>
+        
+        <p>Although there were several different aspects to the simulation, I was mainly tasked with working on the ultrasound simulation.</p>
+
+        <h3>Technical Overview</h3>
+
+        <p>To achieve the ultrasound effect, first, the 3D models that make up the internal organs of the patient's body were baked into Signed Distance Fields (SDFs) and stored in a tree structure so that they could be passed to the Compute Shader.</p>
+        
+        <img src="../img/projects/ultrasound/sdf-grid.png" alt="">
+        
+        <p>The Compute Shader then uses this data to generate a flat slice of the 3D models based on where the ultrasound probe is located. The internal structures are then textured with customizable materials. Then, a quick ray-tracing step is done on the slice to calculate the shadows that the organs should cast. All of this data is then packed into the channels of a texture, resulting in something like this:</p>
+
+        <img src="../img/projects/ultrasound/no-post-process-margin.png" alt="">
+        
+        <p>Finally, this texture goes through a post-processing step that combines all of the data calculated in the Compute Shader into a final image that gets presented to the user.</p>
+        
+        <img src="../img/projects/ultrasound/with-post-process-margin.png" alt="">
+
+        <p>The project was successfully delivered and approved by the client and is now being used in production to train doctors in Virtual Reality.</p>
+    </div>
+</div>
+</div>
+
+
+<!-- Modal Fluid Simulation -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Particle Fluid Simulation</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <h3>A real-time particle fluid simulation written with Compute Shaders.</h3>
+        
+        <iframe src="https://drive.google.com/file/d/1uuWpYch-g_wsOAEqpxSKDKOVfb4VXVGS/preview" allow="autoplay"></iframe>
+
+        <p>I developed this simulator in the Unity Game Engine as one of my learning assignments as a Technical Art intern. It works by calculating the hydrodynamics of the particles in a Compute Shader and batch-rendering all of the particles in a single draw call to optimize for performance.</p>
+
+        <h3>Technical Overview</h3>
+
+        <p>The first version of the fluid simulation was very unoptimized, and couldn't run in real-time with more than a couple of hundred particles, even though it was implemented in a Compute Shader. The first optimization strategy I employed was, as already mentioned, batching the draw calls for all particle spheres. This, however, did not result in significant performance gains.</p>
+
+        <p>Now that I was sure the bottleneck was the fluid calculation, I optimized it using a spatial hash grid. With this approach, the simulation space is divided into several chunks, and only particles in the same chunk and adjacent chunks interact with each other.</p>
+
+        <img src="../img/projects/fluid-sim/spatial-hash-grid.png" alt="">
+        
+        <p>To achieve this, I had to first somehow sort the particles so that particles closer to each other in the simulation would also be close to each other in my particle array. I chose to do that based on a hash value calculated from their position. To sort the particles, I used the Bitonic Sort algorithm, which can easily be parallelized, making it ideal to be used in compute shaders.</p>
+
+        <img src="../img/projects/fluid-sim/bitonic-sort.png" alt="">
+        
+        <p>Now, with these optimizations in place, the simulation can run in real time with hundreds of thousands of particles at once.</p>
+
+        <p>It was a very fun and challenging exercise, and I got to learn a lot more about Compute Shaders and optimizations in parallel systems.</p>
+    </div>
+</div>
+</div>
+
+
+<!-- Modal Custom Decal -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Custom Decal</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <h3>A custom fake Decal effect that can be used in any mesh, with no need for actual Decals.</h3>
+        
+        <iframe src="https://drive.google.com/file/d/1BQq7wotFSw5QtDWJG9mqK1a7gSLLw5II/preview" allow="autoplay"></iframe>
+
+        <p>I originally developed this effect to simulate blood on medical tools as they become dirty. The problem we faced at the time was that the target hardware for the project didn't support actual decals, so I had to fake them.</p>
+
+        <p>My approach ended up being so effective that from then on, we used my solution whenever we could.</p>
+
+        <h3>Technical Overview</h3>
+
+        <p>The effect works by overlaying a second material on top of the original object, giving the impression of a decal over it.</p>
+
+        <p>The visual aspects of the blood were made by layering three different parts: a flat plane where everything below became red; a thin layer of noise right on top of the plane; and a texture the user can supply to have some more artistic control over the result.</p>
+
+        <p>All of these changes get applied to the normals as well, to give the impression that there's a layer of blood over the tool.</p>
+    </div>
+</div>
+</div>
+
+
+<!-- Modal X-ray Effect -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>X-ray Effect</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <h3>A custom X-ray effect made for Virtual Reality medical simulations.</h3>
+        
+        <iframe src="https://drive.google.com/file/d/1cpKdmarfJ8PR5Mw-mpVSH8fiOKvzw2xC/preview" allow="autoplay"></iframe>
+
+        <p>I had to develop this effect because none of the commercially available X-ray assets had features that suited the project's needs. It ended up being so useful that it is still used internally in several different medical simulations.</p>
+
+        <h3>Technical Overview</h3>
+
+        <p>On the surface, it is just a simple fresnel effect over the mesh. However, the feature we needed that none of the other assets provided was the ability to focus on different slices of the mesh.</p>
+
+        <p>Using a combination of vertex positions and the camera's depth texture, I implemented a falloff effect on the X-ray. It can be configured to fall from back to front, from front to back, or both sides.</p>
+
+        <p>Several post-processing effects are also available to configure the effect for various X-ray types.</p>
+    </div>
+</div>
+</div>
+
+
+<!-- Modal Custom Outline -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Custom Outline</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <h3>A custom outline for Unity's HDRP that supports planar meshes and mesh-masking.</h3>
+        
+        <iframe src="https://drive.google.com/file/d/1CiEm8ybEtRus1Gd7vMZ___1uRXGyHwyU/preview" allow="autoplay"></iframe>
+
+        <p>I developed this effect for a simulation where the player needed to make lines on a flat surface. Unfortunately, existing outline solutions didn't fit our needs, since none of them provided ways to make the outlines dashed, dotted, or full, which was a requirement for the project.</p>
+
+        <h3>Technical Overview</h3>
+
+        <p>The outlines are made using Unity's Line Renderer. I chose to do it that way for a couple of reasons: they have perfect resolution, since they are drawn as vectors and I would be able to easily implement the dashed and dotted effects that I needed.</p>
+
+        <p>To draw the outline, I wrote an algorithm that, given a mesh, would find the vertices that were on the outer edge of the mesh. With those vertices, it was just a matter of using the Line Renderer between those vertices, and writing some shaders for the various effects that the outline needed.</p>
+
+        <p>Unfortunately, this approach only works with planar meshes. To support volumetric meshes, I had to employ a more usual outline algorithm.</p>
+
+        <p>While both approaches support the mesh masking feature, only the Line Renderer outline supports the different outline shapes (dotted and dashed).</p>
+    </div>
+</div>
+</div>
+
+
+<!-- Modal Shader Fractals -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Shader Fractals</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <p>This project is a collection of GLSL shaders to render 2D and 3D fractals using Ray Marching</p>
+        <p>The project consists of both the source code for the shaders, as well as mathematical explanations behind de creation and rendering of the geometric shapes.</p>
+        <p>The modular way in which the code has been written allows for easy modification to generate a wide range of different fractals.</p>
+
+        <h3>Mandelbrot's Set</h3>
+        <p>Visualization of one of the most famous fractals, based on Mandelbrot's Set.</p>
+        <img src="../img/projects/shader-fractals/mandelbrot_set.gif" alt="Gif do Conjunto de Mandelbrot gerado pelos shaders">
+        
+        <h3>Julia's Set</h3>
+        <p>One of the many visualizations of Julia's Set, described by the French mathematician Gaston Julia.</p>
+        <img src="../img/projects/shader-fractals/julia_set_1.png" alt="Imagem de um Conjunto de Julia gerado pelos shaders">
+        
+        <h3>Menger's Mushroom</h3>
+        <p>Fractal created by me, using the 3D rendering shader, named after its resemblance to Menger's Sponge fractal.</p>
+        <img src="../img/projects/shader-fractals/menger_mushroom.gif" alt="Gif do Cogumelo de Menger gerado pelos shaders">
+        
+        <h3>Menger's Broccoli</h3>
+        <p>Fractal created by me, using the 3D rendering shader, named after its resemblance to Menger's Sponge fractal.</p>
+        <img src="../img/projects/shader-fractals/menger_brocolli.gif" alt="Imagem de um conjunto de Julia gerado pelos shaders">
+        
+        <p>These and many other fractals, along with their descriptions and histories, are available with the source code of the project.</p>
+        <ul class="portfolio-modal__links-list">
+            <li class="portfolio-modal__link-item">
+                <a href="https://github.com/pedrotrschneider/shader-fractals" target="_blank" class="portfolio-modal__link">
+                    <i class="fab fa-github"></i>
+                </a>
             </li>
         </ul>
     </div>
-    </section>
+</div>
+</div>
 
 
-    <!-- My work -->
-    <section class="my-work" id="work">
-    <h2 class="section__title section__title--work hidden lang lang__en">My work</h2>
-    <p class="section__subtitle section__subtitle--work hidden lang lang__en">A selection of my best personal projects</p>
+<!-- Modal Pulsar -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Pulsar</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <img src="../img/projects/pulsar/banner-big.gif" alt="Baner do pulsar">
 
+        <p>This game was developed by a team of colleagues from my University's game development group, USP Game Dev, over the course of 72 hours, for the Ludum Dare 51 game jam.</p>
+        <p>It's a base-building, strategy, and survival game, based on a futuristic scenery.</p>
 
+        <h3>Plot</h3>
+        <p>Hundreds of years after exhausting the natural resources of their home planet, Sunset, humanity travels through the cosmos in the direction of what seems to be their last hope.</p>
+        <p>Planets orbiting the star PSR B1257+L13 emit a mysterious pulsating light that brightens the way for the last colonies to find refuge on these planets' rocky surfaces.</p>
+        <p>As they approach, the people of Sunset are amazed. The amount of energy emitted by these pulses might be just enough to sustain all their ships and colonies!</p>
 
-
-    <div class="portfolio">
-        <!-- Portfolio item: Alfabetiza -->
-        <div class="portfolio__item hidden lang lang__en">
-    <div class="portfolio__img-container">
-        <img src="../img/projects/alfabetiza/banner.png" alt="portfolio image" class="portfolio__img">
-    </div>
-    <div class="portfolio__content-container">
-        <h3 class="portfolio__project-title">Alfabetiza</h3>
-        <p class="portfolio__project-description">An educational game to teach children the Portuguese language.</p>
-        <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
-    </div>
-    </div>
-
-
-        <!-- Portfolio item: Pulsar -->
-        <div class="portfolio__item hidden lang lang__en">
-    <div class="portfolio__img-container">
-        <img src="../img/projects/pulsar/banner.gif" alt="portfolio image" class="portfolio__img">
-    </div>
-    <div class="portfolio__content-container">
-        <h3 class="portfolio__project-title">Pulsar</h3>
-        <p class="portfolio__project-description">A futuristic base-building, strategy survival game.</p>
-        <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
-    </div>
-    </div>
-
-
-        <!-- Portfolio item: Shader Fractals -->
-        <div class="portfolio__item hidden lang lang__en">
-    <div class="portfolio__img-container">
-        <img src="../img/projects/shader-fractals/banner.png" alt="portfolio image" class="portfolio__img">
-    </div>
-    <div class="portfolio__content-container">
-        <h3 class="portfolio__project-title">Shader Fractals</h3>
-        <p class="portfolio__project-description">A collection of GLSL shaders to render 2D and 3D fractals using Ray Marching.</p>
-        <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
-    </div>
-    </div>
-
-
-        <!-- Portfolio item: Totally Accurate Attack on Titan Simulator -->
-        <div class="portfolio__item hidden lang lang__en">
-    <div class="portfolio__img-container">
-        <img src="../img/projects/taaots/banner.png" alt="portfolio image" class="portfolio__img">
-    </div>
-    <div class="portfolio__content-container">
-        <h3 class="portfolio__project-title">Totally Accurate Attack on Titan Simulator</h3>
-        <p class="portfolio__project-description">A desktop game based on the Attack on Titan anime series.</p>
-        <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
-    </div>
-    </div>
-
-
-        <!-- Portfolio item: Creative Coding -->
-        <div class="portfolio__item hidden lang lang__en">
-    <div class="portfolio__img-container">
-        <img src="../img/projects/challenges/banner.png" alt="portfolio image" class="portfolio__img">
-    </div>
-    <div class="portfolio__content-container">
-        <h3 class="portfolio__project-title">Creative coding</h3>
-        <p class="portfolio__project-description">A collection of creative coding and computer graphics projects.</p>
-        <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
-    </div>
-    </div>
-
-
-    </div>
+        <h3>Gameplay</h3>
+        <p>It's based on the construction of power plants to generate energy for several different buildings in the colony.</p>
+        <img src="../img/projects/pulsar/bases.gif" alt="Gif dos tipos de bases">
+        <img src="../img/projects/pulsar/img1.jpg" alt="Imagem 1 do pulsar">
+        <img src="../img/projects/pulsar/img2.jpg" alt="Imagem 2 do pulsar">
         
-    </section>
-            <!-- Modals for portfolio items -->
-            <!-- Modal Alfabetiza -->
-    <div class="portfolio-modal lang lang__en">
-    <div class="portfolio-modal__inner">
-        <div class="portfolio-modal__top">
-            <div class="portfolio-modal__title">
-                <h2>Alfabetiza</h2>
-            </div>
-            <button class="portfolio-modal__close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-        <div class="portfolio-modal__content">
-            <h3>An educational game to teach children the Portuguese language</h3>
-            <img src="../img/projects/alfabetiza/interface2.png" alt="">
-            
-            <p>This game was developed in partnership with the Faculty of Education from the University of São Paulo (FEUSP) and the Institute of Mathematics and Statistics from the University of São Paulo (IME-USP).</p>
-            <p>The goal of the game is to be a platform aimed at teaching children the Portuguese language</p>
-            
-            <h3>Gameplay</h3>
-            <p>The game consists of a collection of mini-games, each one exploring a different aspect of the Portuguese language. The learning is developed by interactions based on images, text, and audio, to ensure a broad development of the children's communication skills.</p>
-            
-            <p>In addition to that, there is also a login system that can be utilized in a classroom. This way, the performance of the students in each mini-game can be registered, to be later analyzed by the professors, to identify learning difficulties in specific areas.</p>
-            <img src="../img/projects/alfabetiza/interface1.png" alt="">
-            <p>Versions of the game without the login system can also be utilized, be it for tests, situations that don't allow for internet access, or when this kind of data isn't needed.</p>
-            
-            <h3>Scenery</h3>
-            <p>The game as a whole takes place in a scenery based on Brazilian traditional indigenous legends. The minigames are divided between the four elements: Earth, Water, Fire, and Air.</p>
-            <p>Each of the elements is based on a different indigenous legend, that can be listened to and read after completing the first minigame in each element.</p>
-            <img src="../img/projects/alfabetiza/myth3.png" alt="">
-            
-            <p>More information is available in the GitLab repository, and on the official documentation.</p>
-            <ul class="portfolio-modal__links-list">
-                <li class="portfolio-modal__link-item">
-                    <a href="https://gitlab.com/pedrotrschneider/alfabetiza-godot" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-gitlab"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://pedrotrschneider.github.io/alfabetiza-book/index.html" target="_blank" class="portfolio-modal__link">
-                        <i class="fa-solid fa-book"></i>
-                    </a>
-                </li>
-            </ul>
-            
-            <p>The game is available for Web, Windows, Linux, and Android, and can be played on the browser via the itch.io page. All different builds of the game for all platforms are available on a GitLab repository.</p>
-            <ul class="portfolio-modal__links-list">
-                <li>
-                    <a href="https://pedrotrschneider.itch.io/alfabetiza" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-itch-io"></i>
-                    </a>
-                </li>
-                <li class="portfolio-modal__link-item">
-                    <a href="https://gitlab.com/pedrotrschneider/alfabetiza-builds" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-gitlab"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <p>The source code and all of the assets are available in the GitLab repository, and builds for Windows, Linux, and Mac are available at the game's page on Ludum Dare 51's official site.</p>
+        <ul class="portfolio-modal__links-list">
+            <li class="portfolio-modal__link-item">
+                <a href="https://gitlab.com/uspgamedev/pulsar" target="_blank" class="portfolio-modal__link">
+                    <i class="fab fa-gitlab"></i>
+                </a>
+            </li>
+            <li class="portfolio-modal__link-item">
+                <a href="https://ldjam.com/events/ludum-dare/51/pulsar" target="_blank" class="portfolio-modal__link">
+                    <i class="fa-solid fa-gamepad"></i>
+                </a>
+            </li>
+        </ul>
     </div>
-    </div>
+</div>
+</div>
 
 
-    <!-- Modal Pulsar -->
-    <div class="portfolio-modal lang lang__en">
-    <div class="portfolio-modal__inner">
-        <div class="portfolio-modal__top">
-            <div class="portfolio-modal__title">
-                <h2>Pulsar</h2>
-            </div>
-            <button class="portfolio-modal__close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+<!-- Modal Coding Challenges -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Creative Coding</h2>
         </div>
-        <div class="portfolio-modal__content">
-            <img src="../img/projects/pulsar/banner-big.gif" alt="Baner do pulsar">
-
-            <p>This game was developed by a team of colleagues from my University's game development group, USP Game Dev, over the course of 72 hours, for the Ludum Dare 51 game jam.</p>
-            <p>It's a base-building, strategy, and survival game, based on a futuristic scenery.</p>
-
-            <h3>Plot</h3>
-            <p>Hundreds of years after exhausting the natural resources of their home planet, Sunset, humanity travels through the cosmos in the direction of what seems to be their last hope.</p>
-            <p>Planets orbiting the star PSR B1257+L13 emit a mysterious pulsating light that brightens the way for the last colonies to find refuge on these planets' rocky surfaces.</p>
-            <p>As they approach, the people of Sunset are amazed. The amount of energy emitted by these pulses might be just enough to sustain all their ships and colonies!</p>
-
-            <h3>Gameplay</h3>
-            <p>It's based on the construction of power plants to generate energy for several different buildings in the colony.</p>
-            <img src="../img/projects/pulsar/bases.gif" alt="Gif dos tipos de bases">
-            <img src="../img/projects/pulsar/img1.jpg" alt="Imagem 1 do pulsar">
-            <img src="../img/projects/pulsar/img2.jpg" alt="Imagem 2 do pulsar">
-            
-            <p>The source code and all of the assets are available in the GitLab repository, and builds for Windows, Linux, and Mac are available at the game's page on Ludum Dare 51's official site.</p>
-            <ul class="portfolio-modal__links-list">
-                <li class="portfolio-modal__link-item">
-                    <a href="https://gitlab.com/uspgamedev/pulsar" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-gitlab"></i>
-                    </a>
-                </li>
-                <li class="portfolio-modal__link-item">
-                    <a href="https://ldjam.com/events/ludum-dare/51/pulsar" target="_blank" class="portfolio-modal__link">
-                        <i class="fa-solid fa-gamepad"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
     </div>
+    <div class="portfolio-modal__content">
+        <p>One of my favorite aspects of coding is creative coding, working together with computer graphics. Based on that, Daniel Shiffman, from <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a> YouTube channel, makes <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH">Coding Challenges</a> that mix creative coding and computer graphics.</p>
+        <p>With the goal of having fun and learning more, I decided to recreate his Coding Challenges using other technologies that I'm more familiar with.</p>
+
+        <p>This is an ongoing project, and the goal is to, eventually, catch up to the over 200 challenges the original project has. I found it to be a great source of learning, both for me and for other people to see how to reach the same result from completely different platforms.</p>
+
+        <h3>Challenge 9: Solar System Part 3</h3>
+        <img src="../img/projects/challenges/solar-system.png" alt="">
+
+        <h3>Challenge 12: Lorenz's Attractor</h3>
+        <img src="../img/projects/challenges/lorenz-attractor.png" alt="">
+
+        <h3>Challenge 13: Reaction-Diffusion ALgorithm</h3>
+        <img src="../img/projects/challenges/capture.gif" alt="">
+
+        <p>The source code for all projects is available in the GitLab repository.</p>
+        <ul class="portfolio-modal__links-list">
+            <li class="portfolio-modal__link-item">
+                <a href="https://gitlab.com/pedrotrschneider/coding-challenges" target="_blank" class="portfolio-modal__link">
+                    <i class="fab fa-gitlab"></i>
+                </a>
+            </li>
+        </ul>
     </div>
+</div>
+</div>
 
 
-    <!-- Modal Shader Fractals -->
-    <div class="portfolio-modal lang lang__en">
-    <div class="portfolio-modal__inner">
-        <div class="portfolio-modal__top">
-            <div class="portfolio-modal__title">
-                <h2>Shader Fractals</h2>
-            </div>
-            <button class="portfolio-modal__close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-        <div class="portfolio-modal__content">
-            <p>This project is a collection of GLSL shaders to render 2D and 3D fractals using Ray Marching</p>
-            <p>The project consists of both the source code for the shaders, as well as mathematical explanations behind de creation and rendering of the geometric shapes.</p>
-            <p>The modular way in which the code has been written allows for easy modification to generate a wide range of different fractals.</p>
-
-            <h3>Mandelbrot's Set</h3>
-            <p>Visualization of one of the most famous fractals, based on Mandelbrot's Set.</p>
-            <img src="../img/projects/shader-fractals/mandelbrot_set.gif" alt="Gif do Conjunto de Mandelbrot gerado pelos shaders">
-            
-            <h3>Julia's Set</h3>
-            <p>One of the many visualizations of Julia's Set, described by the French mathematician Gaston Julia.</p>
-            <img src="../img/projects/shader-fractals/julia_set_1.png" alt="Imagem de um Conjunto de Julia gerado pelos shaders">
-            
-            <h3>Menger's Mushroom</h3>
-            <p>Fractal created by me, using the 3D rendering shader, named after its resemblance to Menger's Sponge fractal.</p>
-            <img src="../img/projects/shader-fractals/menger_mushroom.gif" alt="Gif do Cogumelo de Menger gerado pelos shaders">
-            
-            <h3>Menger's Broccoli</h3>
-            <p>Fractal created by me, using the 3D rendering shader, named after its resemblance to Menger's Sponge fractal.</p>
-            <img src="../img/projects/shader-fractals/menger_brocolli.gif" alt="Imagem de um conjunto de Julia gerado pelos shaders">
-            
-            <p>These and many other fractals, along with their descriptions and histories, are available with the source code of the project.</p>
-            <ul class="portfolio-modal__links-list">
-                <li class="portfolio-modal__link-item">
-                    <a href="https://github.com/pedrotrschneider/shader-fractals" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </div>
-
-
-    <!-- Modal Totally Accurate Attack on Titan Simulator -->
-    <div class="portfolio-modal lang lang__en">
-    <div class="portfolio-modal__inner">
-        <div class="portfolio-modal__top">
-            <div class="portfolio-modal__title">
-                <h2>Totally Accurate Attack on Titan Simulator</h2>
-            </div>
-            <button class="portfolio-modal__close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-        <div class="portfolio-modal__content">
-            <p>This game was developed over the course of one week for the Chocolate Game Jam, using the Godot Game Engine.</p>
-            <p>All the source code and assets for the game were made in the week of the jam.</p>
-            <p>The main idea of the game was the simulation of the 3D maneuver system, as shown in the anime, for movement and combat.</p>
-            <p>To that end, a big part of the default functionality of Godot's Physics system had to be re-written to accommodate the movement system I wanted to implement.</p>
-            <p>The game features a complete tutorial, teaching the player how to use the game's movement system, in addition to an infinite arcade mode in which the player has to survive as long as they can, or kill as many titans as they can.</p>
-            <p>It has over 8 thousand views and over 2.5 thousand downloads on itch.io.</p>
-
-            <h3>Tutorial</h3>
-            <img src="../img/projects/taaots/tutorial.png" alt="Imagem do tutorial">
-
-            <h3>Arcade Mode</h3>
-            <img src="../img/projects/taaots/arcade1.png" alt="Imagem do modo arcade">
-            <img src="../img/projects/taaots/arcade2.png" alt="Imagem do modo arcade">
-            <img src="../img/projects/taaots/arcade3.png" alt="Imagem do modo arcade">
-            <img src="../img/projects/taaots/arcade4.png" alt="Imagem do modo arcade">
-            
-            <p>All of the source code and assets from the game are available on GitLab, and builds for Windows, Linux, and Mac are available on itch.io.</p>
-            <ul class="portfolio-modal__links-list">
-                <li class="portfolio-modal__link-item">
-                    <a href="https://gitlab.com/pedrotrschneider/totaly-accurate-attack-on-titan-simulator" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-gitlab"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://pedrotrschneider.itch.io/totally-accurate-attack-on-titan-simulator" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-itch-io"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </div>
-
-
-    <!-- Modal Coding Challenges -->
-    <div class="portfolio-modal lang lang__en">
-    <div class="portfolio-modal__inner">
-        <div class="portfolio-modal__top">
-            <div class="portfolio-modal__title">
-                <h2>Creative Coding</h2>
-            </div>
-            <button class="portfolio-modal__close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-        <div class="portfolio-modal__content">
-            <p>One of my favorite aspects of coding is creative coding, working together with computer graphics. Based on that, Daniel Shiffman, from <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a> YouTube channel, makes <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH">Coding Challenges</a> that mix creative coding and computer graphics.</p>
-            <p>With the goal of having fun and learning more, I decided to recreate his Coding Challenges using other technologies that I'm more familiar with.</p>
-
-            <p>This is an ongoing project, and the goal is to, eventually, catch up to the over 200 challenges the original project has. I found it to be a great source of learning, both for me and for other people to see how to reach the same result from completely different platforms.</p>
-
-            <h3>Challenge 9: Solar System Part 3</h3>
-            <img src="../img/projects/challenges/solar-system.png" alt="">
-
-            <h3>Challenge 12: Lorenz's Attractor</h3>
-            <img src="../img/projects/challenges/lorenz-attractor.png" alt="">
-
-            <h3>Challenge 13: Reaction-Diffusion ALgorithm</h3>
-            <img src="../img/projects/challenges/capture.gif" alt="">
-
-            <p>The source code for all projects is available in the GitLab repository.</p>
-            <ul class="portfolio-modal__links-list">
-                <li class="portfolio-modal__link-item">
-                    <a href="https://gitlab.com/pedrotrschneider/coding-challenges" target="_blank" class="portfolio-modal__link">
-                        <i class="fab fa-gitlab"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </div>
-
-
-            <!-- Footer -->
-            <footer class="footer">
-    <a href="mailto:pedrotrschneider@gmail.com" target="_blank" class="footer__link hidden">pedrotrschneider@gmail.com</a>
-    <ul class="social-list">
-        <li class="social-list__item hidden">
-            <a href="https://gitlab.com/pedrotrschneider" target="_blank" class="social-list__link">
-                <i class="fab fa-gitlab"></i>
-            </a>
-        </li>
-        <li class="social-list__item hidden">
-            <a href="https://github.com/pedrotrschneider" target="_blank" class="social-list__link">
-                <i class="fab fa-github"></i>
-            </a>
-        </li>
-        <li class="social-list__item hidden">
-            <a href="https://pedrotrschneider.itch.io/" target="_blank" class="social-list__link">
-                <i class="fab fa-itch-io"></i>
-            </a>
-        </li>
-        <li class="social-list__item hidden">
-            <a href="https://linkedin.com/in/pedro-schneider-485b97261" target="_blank" class="social-list__link">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </li>
-    </ul>
-    <p class="footer__copyright hidden"><strong>Layout &amp; Code</strong>: Copyright <strong>©</strong> 2022-2023 <strong>Pedro Schneider</strong> via <strong>GPL-3.0</strong></p>
-    </footer>
-        
-        <!-- Scripts -->
-        <script src="../js/index.js"></script>
-        <script src="../js/build.js"></script>
-    </body>
-</html>
+<!-- Modal Alfabetiza -->
+<!-- <include src="../components/modals/alfabetiza.html"></include> -->
+<!-- Modal Totally Accurate Attack on Titan Simulator -->
+<!-- <include src="../components/modals/taaots.html"></include> -->
+        <!-- Footer -->
+        <footer class="footer">
+<a href="mailto:pedrotrschneider@gmail.com" target="_blank" class="footer__link hidden">pedrotrschneider@gmail.com</a>
+<ul class="social-list">
+    <li class="social-list__item hidden">
+        <a href="https://gitlab.com/pedrotrschneider" target="_blank" class="social-list__link">
+            <i class="fab fa-gitlab"></i>
+        </a>
+    </li>
+    <li class="social-list__item hidden">
+        <a href="https://github.com/pedrotrschneider" target="_blank" class="social-list__link">
+            <i class="fab fa-github"></i>
+        </a>
+    </li>
+    <li class="social-list__item hidden">
+        <a href="https://pedrotrschneider.itch.io/" target="_blank" class="social-list__link">
+            <i class="fab fa-itch-io"></i>
+        </a>
+    </li>
+    <li class="social-list__item hidden">
+        <a href="https://linkedin.com/in/pedro-schneider-485b97261" target="_blank" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </li>
+</ul>
+<p class="footer__copyright hidden"><strong>Layout &amp; Code</strong>: Copyright <strong>©</strong> 2022-2023 <strong>Pedro Schneider</strong> via <strong>GPL-3.0</strong></p>
+</footer>
+    
+    <!-- Scripts -->
+    <script src="../js/index.js"></script>
+    <script src="../js/build.js"></script>
+</body>
