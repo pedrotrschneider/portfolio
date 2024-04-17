@@ -76,6 +76,7 @@
 
 .portfolio-modal__content {
     background: var(--clr-dark);
+    height: 100%;
     padding: 0 1em;
     padding-bottom: 1em;
     line-height: 1.5;
@@ -97,7 +98,9 @@
 
 .portfolio-modal__content iframe {
     display: block;
-    height: 90%;
+    width: 90%;
+    aspect-ratio: 16/9;
+    height: auto;
     border: 0;
 }
 
