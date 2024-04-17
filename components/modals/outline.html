@@ -1,0 +1,89 @@
+<div class="portfolio-modal lang lang__en">
+    <div class="portfolio-modal__inner">
+        <div class="portfolio-modal__top">
+            <div class="portfolio-modal__title">
+                <h2>Custom Outline</h2>
+            </div>
+            <button class="portfolio-modal__close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="portfolio-modal__content">
+            <h3>A custom outline for Unity's HDRP that supports planar meshes and mesh-masking.</h3>
+            
+            <iframe src="https://drive.google.com/file/d/1CiEm8ybEtRus1Gd7vMZ___1uRXGyHwyU/preview" allow="autoplay"></iframe>
+
+            <p>I developed this effect for a simulation where the player needed to make lines on a flat surface. Unfortunately, existing outline solutions didn't fit our needs, since none of them provided ways to make the outlines dashed, dotted, or full, which was a requirement for the project.</p>
+
+            <h3>Technical Overview</h3>
+
+            <p>The outlines are made using Unity's Line Renderer. I chose to do it that way for a couple of reasons: they have perfect resolution, since they are drawn as vectors and I would be able to easily implement the dashed and dotted effects that I needed.</p>
+
+            <p>To draw the outline, I wrote an algorithm that, given a mesh, would find the vertices that were on the outer edge of the mesh. With those vertices, it was just a matter of using the Line Renderer between those vertices, and writing some shaders for the various effects that the outline needed.</p>
+
+            <p>Unfortunately, this approach only works with planar meshes. To support volumetric meshes, I had to employ a more usual outline algorithm.</p>
+
+            <p>While both approaches support the mesh masking feature, only the Line Renderer outline supports the different outline shapes (dotted and dashed).</p>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal lang lang__pt">
+    <div class="portfolio-modal__inner">
+        <div class="portfolio-modal__top">
+            <div class="portfolio-modal__title">
+                <h2>Alfabetiza</h2>
+            </div>
+            <button class="portfolio-modal__close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="portfolio-modal__content">
+            <h3>Um jogo educacional para alfabetização de crianças na língua portuguesa</h3>
+            <img src="../img/projects/alfabetiza/interface2.png" alt="">
+            
+            <p>Este jogo foi desenvolvido em parceria com a Faculdade de Educação da Universidade de São Paulo (FEUSP) e o Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP).</p>
+            <p>Ele tem como objetivo ser uma plataforma voltada para a alfabetização de crianças na língua portuguesa.</p>
+            
+            <h3>Gameplay</h3>
+            <p>O jogo consiste em uma coletânia de mini-jogos, cada um explorando um aspecto diferente da língua portuguesa. O aprendizado é desenvolvido por meio de interações baseadas em imagens, em textos e em áudios, para garantir um desenvolvimento abrangente das habilidades de comunicação da criança.</p>
+            
+            <p>Além disso, há um sistema de login para ser utilizado em sala de aula. Dessa forma, o desempenho dos alunos nos minijogos ficam registrados, e podem ser analisados pelo educador posteriormente, com o objetivo de identificar dificuldades em áreas específicas.</p>
+            <img src="../img/projects/alfabetiza/interface1.png" alt="">
+            <p>Versões do jogo sem login também podem ser utilizadas para testes, ocasiões que não permitam acesso à internet, ou quando o acompanhamento individual não é necessário.</p>
+            
+            <h3>Cenário</h3>
+            <p>O jogo como um todo está situado em um cenário baseado em lendas tradicionais indígenais brasileiras. Os minijogos são divididos entre os quatro elementos: Terra, Água, Fogo e Ar.</p>
+            <p>Cada um dos elementos é baseado em alguma lenda indígena, que pode ser ouvida após completar o primeiro mini-jogo de cada elemento.</p>
+            <img src="../img/projects/alfabetiza/myth3.png" alt="">
+            
+            <p>Mais informações podem ser encontradas no repositório do projeto no GitLab, e na documentação oficial.</p>
+            <ul class="portfolio-modal__links-list">
+                <li class="portfolio-modal__link-item">
+                    <a href="https://gitlab.com/pedrotrschneider/alfabetiza-godot" target="_blank" class="portfolio-modal__link">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pedrotrschneider.github.io/alfabetiza-book/index.html" target="_blank" class="portfolio-modal__link">
+                        <i class="fa-solid fa-book"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <p>O jogo está disponível para Web, Windows, Linux e Android, e pode ser jogado no navegador em sua página na itch.io. Todos os tipos de builds do jogo para todas as plataformas estão disponíveis no repositório de builds no GitLab.</p>
+            <ul class="portfolio-modal__links-list">
+                <li>
+                    <a href="https://pedrotrschneider.itch.io/alfabetiza" target="_blank" class="portfolio-modal__link">
+                        <i class="fab fa-itch-io"></i>
+                    </a>
+                </li>
+                <li class="portfolio-modal__link-item">
+                    <a href="https://gitlab.com/pedrotrschneider/alfabetiza-builds" target="_blank" class="portfolio-modal__link">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

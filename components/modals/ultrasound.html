@@ -1,0 +1,97 @@
+<div class="portfolio-modal lang lang__en">
+    <div class="portfolio-modal__inner">
+        <div class="portfolio-modal__top">
+            <div class="portfolio-modal__title">
+                <h2>Ultrasound</h2>
+            </div>
+            <button class="portfolio-modal__close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="portfolio-modal__content">
+            <h3>A realistic real-time Ray-Traced Ultrasound Simulation.</h3>
+            
+            <iframe src="https://drive.google.com/file/d/1VQZUjaKGm5cikv19pHkgLtZgJv3NuAje/preview" allow="autoplay"></iframe>
+
+            <p>This simulator was developed alongside a team of Developers and Technical Artists using the Unity Game Engine. It was requested by a client who wanted to integrate Virtual Reality into the training of doctors to use their equipment.</p>
+            
+            <p>Although there were several different aspects to the simulation, I was mainly tasked with working on the ultrasound simulation.</p>
+
+            <h3>Technical Overview</h3>
+
+            <p>To achieve the ultrasound effect, first, the 3D models that make up the internal organs of the patient's body were baked into Signed Distance Fields (SDFs) and stored in a tree structure so that they could be passed to the Compute Shader.</p>
+            
+            <img src="../img/projects/ultrasound/sdf-grid.png" alt="">
+            
+            <p>The Compute Shader then uses this data to generate a flat slice of the 3D models based on where the ultrasound probe is located. The internal structures are then textured with customizable materials. Then, a quick ray-tracing step is done on the slice to calculate the shadows that the organs should cast. All of this data is then packed into the channels of a texture, resulting in something like this:</p>
+
+            <img src="../img/projects/ultrasound/no-post-process-margin.png" alt="">
+            
+            <p>Finally, this texture goes through a post-processing step that combines all of the data calculated in the Compute Shader into a final image that gets presented to the user.</p>
+            
+            <img src="../img/projects/ultrasound/with-post-process-margin.png" alt="">
+
+            <p>The project was successfully delivered and approved by the client and is now being used in production to train doctors in Virtual Reality.</p>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal lang lang__pt">
+    <div class="portfolio-modal__inner">
+        <div class="portfolio-modal__top">
+            <div class="portfolio-modal__title">
+                <h2>Alfabetiza</h2>
+            </div>
+            <button class="portfolio-modal__close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="portfolio-modal__content">
+            <h3>Um jogo educacional para alfabetização de crianças na língua portuguesa</h3>
+            <img src="../img/projects/alfabetiza/interface2.png" alt="">
+            
+            <p>Este jogo foi desenvolvido em parceria com a Faculdade de Educação da Universidade de São Paulo (FEUSP) e o Instituto de Matemática e Estatística da Universidade de São Paulo (IME-USP).</p>
+            <p>Ele tem como objetivo ser uma plataforma voltada para a alfabetização de crianças na língua portuguesa.</p>
+            
+            <h3>Gameplay</h3>
+            <p>O jogo consiste em uma coletânia de mini-jogos, cada um explorando um aspecto diferente da língua portuguesa. O aprendizado é desenvolvido por meio de interações baseadas em imagens, em textos e em áudios, para garantir um desenvolvimento abrangente das habilidades de comunicação da criança.</p>
+            
+            <p>Além disso, há um sistema de login para ser utilizado em sala de aula. Dessa forma, o desempenho dos alunos nos minijogos ficam registrados, e podem ser analisados pelo educador posteriormente, com o objetivo de identificar dificuldades em áreas específicas.</p>
+            <img src="../img/projects/alfabetiza/interface1.png" alt="">
+            <p>Versões do jogo sem login também podem ser utilizadas para testes, ocasiões que não permitam acesso à internet, ou quando o acompanhamento individual não é necessário.</p>
+            
+            <h3>Cenário</h3>
+            <p>O jogo como um todo está situado em um cenário baseado em lendas tradicionais indígenais brasileiras. Os minijogos são divididos entre os quatro elementos: Terra, Água, Fogo e Ar.</p>
+            <p>Cada um dos elementos é baseado em alguma lenda indígena, que pode ser ouvida após completar o primeiro mini-jogo de cada elemento.</p>
+            <img src="../img/projects/alfabetiza/myth3.png" alt="">
+            
+            <p>Mais informações podem ser encontradas no repositório do projeto no GitLab, e na documentação oficial.</p>
+            <ul class="portfolio-modal__links-list">
+                <li class="portfolio-modal__link-item">
+                    <a href="https://gitlab.com/pedrotrschneider/alfabetiza-godot" target="_blank" class="portfolio-modal__link">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pedrotrschneider.github.io/alfabetiza-book/index.html" target="_blank" class="portfolio-modal__link">
+                        <i class="fa-solid fa-book"></i>
+                    </a>
+                </li>
+            </ul>
+            
+            <p>O jogo está disponível para Web, Windows, Linux e Android, e pode ser jogado no navegador em sua página na itch.io. Todos os tipos de builds do jogo para todas as plataformas estão disponíveis no repositório de builds no GitLab.</p>
+            <ul class="portfolio-modal__links-list">
+                <li>
+                    <a href="https://pedrotrschneider.itch.io/alfabetiza" target="_blank" class="portfolio-modal__link">
+                        <i class="fab fa-itch-io"></i>
+                    </a>
+                </li>
+                <li class="portfolio-modal__link-item">
+                    <a href="https://gitlab.com/pedrotrschneider/alfabetiza-builds" target="_blank" class="portfolio-modal__link">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

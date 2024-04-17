@@ -48,6 +48,12 @@
     backdrop-filter: blur(12px);
 }
 
+.portfolio-modal__top p {
+    font-size: 16;
+    font-weight: bold;
+    color: var(--clr-accent);
+}
+
 .portfolio-modal__title {
     flex-grow: 1;
     padding: 1em 1.5em;
@@ -88,7 +94,14 @@
     color: var(--clr-accent);
 }
 
-.portfolio-modal__content img {
+.portfolio-modal__content iframe {
+    display: block;
+    height: 90%;
+    border: 0;
+}
+
+.portfolio-modal__content img,
+.portfolio-modal__content iframe {
     width: 90%;
     max-width: 90%;
     padding: .3em 0;
