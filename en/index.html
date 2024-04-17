@@ -237,6 +237,19 @@
 
 
 <div class="portfolio">
+    <!-- Portfolio item: Sculpting -->
+    <div class="portfolio__item hidden lang lang__en">
+<div class="portfolio__img-container">
+    <img src="../img/projects/sculpting/banner.gif" alt="portfolio image" class="portfolio__img">
+</div>
+<div class="portfolio__content-container">
+    <h3 class="portfolio__project-title">Procedural Mesh Sculping</h3>
+    <p class="portfolio__project-description">A real-time mesh sculpting algorithm made with Compute Shaders in Unity.</p>
+    <p class="portfolio__project-cta"><strong>Click to learn more!</strong></p>
+</div>
+</div>
+
+
     <!-- Portfolio item: Ultrasound -->
     <div class="portfolio__item hidden lang lang__en">
 <div class="portfolio__img-container">
@@ -349,7 +362,53 @@
     
 </section>
         <!-- Modals for portfolio items -->
-        <!-- Modal Ultrasound -->
+        <!-- Modal Sculpting -->
+<div class="portfolio-modal lang lang__en">
+<div class="portfolio-modal__inner">
+    <div class="portfolio-modal__top">
+        <div class="portfolio-modal__title">
+            <h2>Sculpting</h2>
+        </div>
+        <p>scroll to see more!</p>
+        <button class="portfolio-modal__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="portfolio-modal__content">
+        <h3>A real-time mesh sculpting algorithm made with Compute Shaders in Unity.</h3>
+        
+        <iframe src="https://drive.google.com/file/d/1HCd5BH8YZaYQW0NK3IIUL5-uNDIhNC2s/preview" allow="autoplay"></iframe>
+
+        <p>This tool is currently under development for an up-and-coming Virtual Reality medical simulation in which the doctor has to drill a portion of the patient's vertebra. This simulator will be presented at an international Medical Technology Congress to potential clients.</p>
+
+        <p>In this project, I'm in charge of the full development of this feature, aside from working with the 3D artists and other developers to integrate it into the simulation.</p>
+        
+        <h3>Technical Overview</h3>
+
+        <p>The first step is to convert the mesh that needs to be sculpted into a Signed Distance Field (SDF) and store it in a 3D texture for use with the tool. It can be used either with a baked or procedural 3D texture.</p>
+        
+        <img src="../img/projects/sculpting/sdf1.png" alt="">
+        
+        <p>Then, a grid of chunks is generated for the procedural mesh. Each chunk has several voxels inside of it and represents a section of the 3D texture. If the user enables this feature, chuk pruning also happens, removing unused chunks to reduce the performance overhead of having too many Game Objects.</p>
+
+        <img src="../img/projects/sculpting/chunks.png" alt="">
+
+        <p>These chunks are then processed by a Compute Shader, and, using the Marching Cubes algorithm, a procedural mesh is generated out of their voxels.</p>
+
+        <img src="../img/projects/sculpting/voxels.png" alt="">
+        
+        <p>With this structure, sculpting can be done simply by modifying the values of the voxels of each chunk (adding or subtracting) and regenerating the mesh of the chunks that were modified. This is also done in a separate Compute Shader.</p>
+        
+        <p>The tool also supports volumetric materials to shade the procedural meshes. These materials can be used to better visualize the internal parts of the mesh, or to signal to the doctor areas where they should drill and where they shouldn't.</p>
+
+        <img src="../img/projects/sculpting/volumetric-material.png" alt="">
+        <img src="../img/projects/sculpting/guidance-material.png" alt="">
+    </div>
+</div>
+</div>
+
+
+<!-- Modal Ultrasound -->
 <div class="portfolio-modal lang lang__en">
 <div class="portfolio-modal__inner">
     <div class="portfolio-modal__top">
