@@ -1,7 +1,7 @@
 /* My services section */
 .my-services {
     background-color: var(--clr-dark-transparent);
-    background-image: url(/img/services-bg.jpg);
+    background-image: url(/portfolio/img/services-bg.jpg);
     backdrop-filter: blur(10px);
     background-size: cover;
     color: var(--clr-light);
